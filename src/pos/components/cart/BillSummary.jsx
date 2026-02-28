@@ -46,6 +46,7 @@ const BillSummary = () => {
         <span className={styles.value}>{formatCurrency(total)}</span>
       </div>
     </div>
+    // added comments to the code
   );
 };
 
