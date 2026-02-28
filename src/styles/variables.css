@@ -1,0 +1,113 @@
+:root {
+  /* Primary Colors */
+  --pos-primary: #5B7FFF;
+  --pos-primary-light: #e8edff;
+  --pos-primary-dark: #4a6be0;
+  --pos-accent: #22c55e;
+  --pos-accent-light: #dcfce7;
+  --pos-danger: #ef4444;
+  --pos-danger-light: #fee2e2;
+  --pos-warning: #f59e0b;
+  --pos-warning-light: #fef3c7;
+
+  /* Neutral Colors */
+  --pos-white: #ffffff;
+  --pos-black: #000000;
+  --pos-gray-50: #f9fafb;
+  --pos-gray-100: #f3f4f6;
+  --pos-gray-200: #e5e7eb;
+  --pos-gray-300: #d1d5db;
+  --pos-gray-400: #9ca3af;
+  --pos-gray-500: #6b7280;
+  --pos-gray-600: #4b5563;
+  --pos-gray-700: #374151;
+  --pos-gray-800: #1f2937;
+  --pos-gray-900: #111827;
+
+  /* Semantic Colors */
+  --bg-primary: var(--pos-white);
+  --bg-secondary: var(--pos-gray-50);
+  --bg-muted: var(--pos-gray-100);
+  --bg-hover: var(--pos-gray-100);
+  --bg-active: var(--pos-primary-light);
+
+  /* Text Colors */
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --text-inverse: var(--pos-white);
+
+  /* Border Colors */
+  --border-color: #e5e7eb;
+  --border-light: #f3f4f6;
+  --border-focus: var(--pos-primary);
+
+  /* Category Colors */
+  --category-blue: #3b82f6;
+  --category-orange: #f97316;
+  --category-pink: #ec4899;
+  --category-purple: #8b5cf6;
+  --category-yellow: #eab308;
+  --category-teal: #14b8a6;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Layout */
+  --sidebar-width: 64px;
+  --header-height: 64px;
+  --category-bar-height: 80px;
+  --search-bar-height: 56px;
+  --orderstrip-height: 80px;
+  --cart-width: 400px;
+
+  /* Z-Index */
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+}

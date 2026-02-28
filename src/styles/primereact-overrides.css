@@ -1,0 +1,174 @@
+/* PrimeReact Theme Overrides */
+
+/* Button */
+.p-button {
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+}
+
+.p-button:focus {
+  box-shadow: 0 0 0 2px var(--pos-primary-light);
+}
+
+.p-button.p-button-text {
+  color: var(--text-secondary);
+}
+
+.p-button.p-button-text:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+/* Input */
+.p-inputtext {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: all var(--transition-fast);
+}
+
+.p-inputtext:focus {
+  border-color: var(--pos-primary);
+  box-shadow: 0 0 0 2px var(--pos-primary-light);
+}
+
+.p-inputtext::placeholder {
+  color: var(--text-muted);
+}
+
+/* Dropdown */
+.p-dropdown {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.p-dropdown:not(.p-disabled):hover {
+  border-color: var(--pos-gray-300);
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+  border-color: var(--pos-primary);
+  box-shadow: 0 0 0 2px var(--pos-primary-light);
+}
+
+.p-dropdown-panel {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.p-dropdown-item {
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: background-color var(--transition-fast);
+}
+
+.p-dropdown-item:hover {
+  background-color: var(--bg-hover);
+}
+
+.p-dropdown-item.p-highlight {
+  background-color: var(--pos-primary-light);
+  color: var(--pos-primary);
+}
+
+/* Badge */
+.p-badge {
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-semibold);
+}
+
+.p-badge.p-badge-success {
+  background-color: var(--pos-accent);
+}
+
+.p-badge.p-badge-danger {
+  background-color: var(--pos-danger);
+}
+
+/* InputNumber */
+.p-inputnumber .p-inputtext {
+  text-align: center;
+}
+
+.p-inputnumber-button {
+  background-color: var(--bg-muted);
+  border: none;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.p-inputnumber-button:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+/* Checkbox */
+.p-checkbox .p-checkbox-box {
+  border-radius: var(--radius-xs);
+  border: 2px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  background-color: var(--pos-primary);
+  border-color: var(--pos-primary);
+}
+
+/* Dialog */
+.p-dialog {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+.p-dialog .p-dialog-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-lg);
+}
+
+.p-dialog .p-dialog-content {
+  padding: var(--spacing-xl);
+}
+
+.p-dialog .p-dialog-footer {
+  border-top: 1px solid var(--border-color);
+  padding: var(--spacing-lg);
+}
+
+/* Toast */
+.p-toast .p-toast-message {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Tooltip */
+.p-tooltip .p-tooltip-text {
+  background-color: var(--pos-gray-800);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* Cart Panel Specific Overrides */
+.pos-cart-panel .p-dropdown {
+  height: 36px;
+  background-color: var(--bg-muted);
+  border: none;
+}
+
+.pos-cart-panel .p-dropdown .p-dropdown-label {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+/* Search Input Override */
+.pos-search-bar .p-inputtext {
+  border: none;
+  background-color: transparent;
+  padding-left: var(--spacing-3xl);
+}
+
+.pos-search-bar .p-inputtext:focus {
+  box-shadow: none;
+}

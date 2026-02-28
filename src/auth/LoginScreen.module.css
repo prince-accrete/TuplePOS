@@ -1,0 +1,223 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Left Panel */
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-4xl);
+  background-color: var(--pos-white);
+}
+
+.illustrationWrapper {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.illustration {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tagline {
+  text-align: center;
+  max-width: 360px;
+}
+
+.tagline h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.tagline p {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.dots {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-2xl);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--pos-gray-300);
+  transition: all var(--transition-normal);
+}
+
+.activeDot {
+  width: 24px;
+  background-color: var(--pos-primary);
+}
+
+/* Right Panel */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-4xl);
+  background-color: #f8fafc;
+}
+
+.pinSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.lockIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.lockSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+}
+
+.pinDots {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.pinDot {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--pos-gray-300);
+  background-color: transparent;
+  transition: all var(--transition-fast);
+}
+
+.pinDot.filled {
+  background-color: var(--pos-primary);
+  border-color: var(--pos-primary);
+}
+
+.error {
+  font-size: var(--font-size-sm);
+  color: var(--pos-danger);
+  margin-bottom: var(--spacing-lg);
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.numBtn {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.numBtn:hover {
+  background-color: var(--pos-gray-100);
+}
+
+.numBtn:active {
+  background-color: var(--pos-gray-200);
+  transform: scale(0.95);
+}
+
+.iconSvg {
+  width: 22px;
+  height: 22px;
+  color: var(--text-secondary);
+}
+
+.signInBtn {
+  width: 100%;
+  max-width: 260px;
+  height: 48px;
+  background-color: var(--pos-gray-200);
+  color: var(--text-muted);
+  border: none;
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: not-allowed;
+  transition: all var(--transition-fast);
+}
+
+.signInBtnActive {
+  background-color: var(--pos-primary);
+  color: var(--pos-white);
+  cursor: pointer;
+}
+
+.signInBtnActive:hover {
+  background-color: var(--pos-primary-dark);
+}
+
+.signInBtnActive:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    padding: var(--spacing-2xl);
+  }
+
+  .rightPanel {
+    padding: var(--spacing-2xl);
+  }
+
+  .illustrationWrapper {
+    max-width: 300px;
+  }
+}

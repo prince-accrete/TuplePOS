@@ -1,0 +1,143 @@
+/* Main POS Layout Grid */
+.pos-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr var(--cart-width);
+  grid-template-rows: var(--header-height) var(--category-bar-height) var(--search-bar-height) 1fr var(--orderstrip-height);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+}
+
+/* Sidebar - spans all rows, first column */
+.pos-sidebar {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  background-color: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+}
+
+/* Header - second column, first row */
+.pos-header {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Category Bar - second column, second row */
+.pos-category-bar {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Search Bar - second column, third row */
+.pos-search-bar {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Product Grid - second column, fourth row */
+.pos-product-grid {
+  grid-column: 2;
+  grid-row: 4;
+  background-color: var(--bg-secondary);
+  overflow-y: auto;
+}
+
+/* Order Strip - second column, fifth row */
+.pos-order-strip {
+  grid-column: 2;
+  grid-row: 5;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Cart Panel - third column, spans all rows */
+.pos-cart-panel {
+  grid-column: 3;
+  grid-row: 1 / -1;
+  background-color: var(--bg-primary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-xs {
+  gap: var(--spacing-xs);
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+.p-sm {
+  padding: var(--spacing-sm);
+}
+
+.p-md {
+  padding: var(--spacing-md);
+}
+
+.p-lg {
+  padding: var(--spacing-lg);
+}
+
+.p-xl {
+  padding: var(--spacing-xl);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
